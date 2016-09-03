@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+</head>
+<body>
+<script>
+/*//Multi dimensional Array
+var people=[
+["aryaman","14","USA","origin",["lovely","boy"]],
+["ishan",11,"USA",["lovely","boy"]],
+["kajal",1,"INDIA",["lovely","boy"]]
+
+];
+//people[2][3][1] ="girl";// to change the value of an array boy to a girl.
+//console.log(people[2][3][1]);
+for(i=0;i<people.length;i++){
+    console.log("Person: " + (i+1));
+
+for(details in people[i]){
+    console.log(people[i][details]);
+
+     for (details of people[i]){
+         console.log(details);}
+}}
+var arrays=[2,4,5,6,7,8,9];
+var result="";
+btn.addEventListener('click',function(){
+for(i=0;i<arrays.length;i++){
+    result=arrays[i]*2;
+    console.log(result);
+}
+
+
+
+},false);*/
+// var changeprops = function(obj){
+//     obj.name ='Fahim';
+//     return obj;
+// }
+var nameobj={
+    name:'hasun',
+    age:'12'
+}
+//console.log(changeprops({
+   // name:"Hasun",
+   // age:'12'
+//}));
+//console.log(changeprops(nameobj));
+//console.log(nameobj);
+//this example helps to change the value of one of the property in an objectghgf
+var extend =function(target){
+    var arg=[].slice.call(arguments);
+    for(var i=1;i<arguments.length;i++){
+        var args=arguments[i];
+        for(var key in args){
+           if(Object.prototype.hasOwnProperty.call(args,key)){
+               target[key]=args[key];
+           }
+        
+
+
+    };
+    return target;
+}}
+console.log(extend({},nameobj,name ='Fahim'));	
+
+	
+</script>
+	
+</body>
+</html>
